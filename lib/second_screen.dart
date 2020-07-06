@@ -10,7 +10,7 @@ class SecondScreen extends StatelessWidget {
       backgroundColor: Colors.red,
       appBar: AppBar(
         title: Text('Dice Roll'),
-        backgroundColor: Colors.green[900],
+        backgroundColor: Colors.green,
       ),
       body: ScopedModelDescendant<DiceFaceModel>(
           builder: (BuildContext context, Widget child, DiceFaceModel model) {
