@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.red,
           appBar: AppBar(
             title: Text('Dicee'),
-            backgroundColor: Colors.green[900],
+            backgroundColor: Colors.green,
           ),
           body: DicePage(),
           floatingActionButton: RollButton(),

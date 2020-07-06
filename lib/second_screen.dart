@@ -1,8 +1,6 @@
 import 'model/diceFaceModel.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-
-import 'main.dart';
 import 'main.dart';
 
 class SecondScreen extends StatelessWidget {
@@ -12,7 +10,7 @@ class SecondScreen extends StatelessWidget {
       backgroundColor: Colors.red,
       appBar: AppBar(
         title: Text('Dice Roll'),
-        backgroundColor: Colors.green[900],
+        backgroundColor: Colors.green,
       ),
       body: ScopedModelDescendant<DiceFaceModel>(
           builder: (BuildContext context, Widget child, DiceFaceModel model) {
