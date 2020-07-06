@@ -1,8 +1,6 @@
 import 'model/diceFaceModel.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-
-import 'main.dart';
 import 'main.dart';
 
 class SecondScreen extends StatelessWidget {

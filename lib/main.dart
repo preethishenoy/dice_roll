@@ -2,7 +2,6 @@ import 'model/diceFaceModel.dart';
 import 'package:flutter/material.dart';
 import 'dice_page.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'dart:math';
 
 void main() {
   return runApp(MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           backgroundColor: Colors.red,
           appBar: AppBar(
-            title: Text('Dicee'),
+            title: Text('Dice Roll'),
             backgroundColor: Colors.green[900],
           ),
           body: DicePage(),
@@ -40,8 +39,7 @@ class RollButton extends StatelessWidget {
         heroTag: "Button 2",
         child: Text('Roll'),
         onPressed: () {
-          model.changeDiceFace(
-              Random().nextInt(6) + 1, Random().nextInt(6) + 1);
+          model.changeDiceFace(model.randomNumbers(), model.randomNumbers());
         },
       );
     });
