@@ -2,7 +2,6 @@ import 'second_screen.dart';
 import 'model/diceFaceModel.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'dart:math';
 
 class DicePage extends StatelessWidget {
   @override
@@ -22,7 +21,7 @@ class DicePage extends StatelessWidget {
                       ),
                       onPressed: () {
                         model.changeDiceFace(
-                            Random().nextInt(6) + 1, Random().nextInt(6) + 1);
+                            model.randomNumbers(), model.randomNumbers());
                       },
                     ),
                   ),
@@ -34,7 +33,7 @@ class DicePage extends StatelessWidget {
                       ),
                       onPressed: () {
                         model.changeDiceFace(
-                            Random().nextInt(6) + 1, Random().nextInt(6) + 1);
+                            model.randomNumbers(), model.randomNumbers());
                       },
                     ),
                   ),
